@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Invoice {
@@ -177,7 +178,10 @@ public class Invoice {
         String headerFormat = "| %-4s | %-12s | %-25s | %-10s | %-8s | %-4s | %-8s | %-5s | %-10s|%n";
         String rowFormat = "| %-4d | %-12d | %-25s | %-10d | %-8d | %-4s | %-8.2f | %-5d | %-10.2f |%n";
 
-        System.out.println("\n\n" + "------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("""
+                           
+                           
+                           ------------------------------------------------------------------------------------------------------------------------""");
         System.out.printf("| %-56s   %-58s|%n", "Bill To", "Ship To");
         System.out.println("------------------------------------------------------------------------------------------------------------------------");
 
@@ -195,13 +199,13 @@ public class Invoice {
         System.out.printf(headerFormat, "S.No", "Product Code", "Product Name", "HSN code", "Quantity", "Units", "Rate", "Tax", "Amount");
         System.out.println("+------+--------------+---------------------------+------------+----------+------+----------+-------+------------+");
 
-        System.out.printf(rowFormat, 1, p1Code, p1Name, p1HSN, p1Qty, "nos", p1Rate, (int)(p1TaxRate * 100), p1TotalAmount);
-        System.out.printf(rowFormat, 2, p2Code, p2Name, p2HSN, p2Qty, "nos", p2Rate, (int)(p2TaxRate * 100), p2TotalAmount);
-        System.out.printf(rowFormat, 3, p3Code, p3Name, p3HSN, p3Qty, "nos", p3Rate, (int)(p3TaxRate * 100), p3TotalAmount);
-        System.out.printf(rowFormat, 4, p4Code, p4Name, p4HSN, p4Qty, "nos", p4Rate, (int)(p4TaxRate * 100), p4TotalAmount);
-        System.out.printf(rowFormat, 5, p5Code, p5Name, p5HSN, p5Qty, "nos", p5Rate, (int)(p5TaxRate * 100), p5TotalAmount);
-        System.out.printf(rowFormat, 6, p6Code, p6Name, p6HSN, p6Qty, "nos", p6Rate, (int)(p6TaxRate * 100), p6TotalAmount);
-        System.out.printf(rowFormat, 7, p7Code, p7Name, p7HSN, p7Qty, "nos", p7Rate, (int)(p7TaxRate * 100), p7TotalAmount);
+        System.out.printf(rowFormat, 1, p1Code, p1Name, p1HSN, p1Qty, "nos", p1Rate, (int) (p1TaxRate * 100), p1TotalAmount);
+        System.out.printf(rowFormat, 2, p2Code, p2Name, p2HSN, p2Qty, "nos", p2Rate, (int) (p2TaxRate * 100), p2TotalAmount);
+        System.out.printf(rowFormat, 3, p3Code, p3Name, p3HSN, p3Qty, "nos", p3Rate, (int) (p3TaxRate * 100), p3TotalAmount);
+        System.out.printf(rowFormat, 4, p4Code, p4Name, p4HSN, p4Qty, "nos", p4Rate, (int) (p4TaxRate * 100), p4TotalAmount);
+        System.out.printf(rowFormat, 5, p5Code, p5Name, p5HSN, p5Qty, "nos", p5Rate, (int) (p5TaxRate * 100), p5TotalAmount);
+        System.out.printf(rowFormat, 6, p6Code, p6Name, p6HSN, p6Qty, "nos", p6Rate, (int) (p6TaxRate * 100), p6TotalAmount);
+        System.out.printf(rowFormat, 7, p7Code, p7Name, p7HSN, p7Qty, "nos", p7Rate, (int) (p7TaxRate * 100), p7TotalAmount);
 
         System.out.println("+------+--------------+---------------------------+------------+----------+------+----------+-------+------------+");
 
